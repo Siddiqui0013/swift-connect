@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Exo } from "next/font/google";
 import "./globals.css";
+import ResponsiveNavbar from "@/components/ResponsiveNavbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const exo = Exo({
+  variable: "--font-exo",
   subsets: ["latin"],
 });
 
@@ -25,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${exo.variable} antialiased`}
       >
+        <ResponsiveNavbar />
         {children}
       </body>
     </html>
