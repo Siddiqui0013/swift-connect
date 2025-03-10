@@ -3,7 +3,9 @@
 import ResponsiveOfficeFeatures from "@/components/Responsive-office-features"
 import TermsOfUse from '@/components/Terms-of-use'
 import Footer from '@/components/Footer'
+import Mobifone from "@/components/MobiFone"
 import Image from 'next/image'
+import Packages from "@/components/Packages"
 
 export default function page() {
   return (
@@ -77,6 +79,8 @@ export default function page() {
   </section>
   <ResponsiveOfficeFeatures />
   <TermsOfUse />
+  <Packages />
+  <Mobifone />
   <Footer />
   </main>
   )
