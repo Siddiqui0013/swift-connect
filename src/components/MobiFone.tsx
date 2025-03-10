@@ -23,14 +23,14 @@ const MobifoneSubscriber = () => {
   ];
 
   return (
-      <div className="mx-auto px-12 py-16">
+      <div className="mx-auto px-8 py-16">
         <h2 className="text-3xl font-bold text-center mb-10 text-[#800000]">
           YOU ARE A MOBIFONE SUBSCRIBER
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {syntaxCards.map((card, index) => (
-            <div key={index} className="bg-gray-100 w-[90%] rounded-lg p-6 shadow-md">
+            <div key={index} className="bg-gray-100  rounded-lg p-6 shadow-md">
               <div className="text-center mb-4">
                 <p className="text-md font-bold text-black uppercase">{card.title}</p>
                 <p className="text-md font-bold text-red-700 uppercase">{card.subtitle}</p>

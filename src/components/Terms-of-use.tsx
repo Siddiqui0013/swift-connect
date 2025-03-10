@@ -23,7 +23,7 @@ export default function TermsOfUse() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#6b3032]">TERMS OF USE</h2>
   
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-4 md:p-0 px-12 items-center justify-center">
             {terms.map((term, index) => (
               <div key={index} className="relative">
                 {/* Number Circle */}
@@ -35,7 +35,7 @@ export default function TermsOfUse() {
                 </div>
   
                 {/* Content Box */}
-                <div className="bg-white rounded-lg p-8 pl-12 shadow-lg min-h-[120px] flex items-center">
+                <div className="bg-white rounded-lg p-2 pl-8 shadow-lg min-h-[120px] flex items-center">
                   <p className="text-[#472e0a] text-xl font-medium">{term.text}</p>
                 </div>
               </div>

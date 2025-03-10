@@ -11,14 +11,10 @@ export default function SwiftConnectHeader() {
           <Image
             src="/favicon.png"
             alt="SwiftConnect Logo"
-            width={60}
-            height={60}
+            width={200}
+            height={200}
             className="mr-2"
           />
-          <div>
-            <h1 className="text-lg font-bold text-red-700">SwiftConnect</h1>
-            <p className="text-xs text-gray-600">Swift. Secure. Connected</p>
-          </div>
         </div>
 
         {/* Contact Information */}
