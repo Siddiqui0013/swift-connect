@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function SwiftConnectHeader() {
   return (
-    <header className="bg-[#EFEFEF] py-8 px-4 border-b border-gray-300">
+    <header className="bg-[#ffdede] py-8 px-4 border-b border-gray-300">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Logo and Company Name */}
         <div className="flex items-center mb-3 md:mb-0">

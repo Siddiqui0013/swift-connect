@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Exo } from "next/font/google";
 import "./globals.css";
-import ResponsiveNavbar from "@/components/ResponsiveNavbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const exo = Exo({
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${exo.variable} antialiased`}
       >
-        <ResponsiveNavbar />
+        <Navbar />
         {children}
         <Footer />
       </body>
