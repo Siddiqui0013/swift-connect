@@ -149,7 +149,7 @@ interface FaqItem {
 }
 
 function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number>(0)
+  const [openIndex, setOpenIndex] = useState<number>(-1)
   
   const faqItems: FaqItem[] = [
     {
