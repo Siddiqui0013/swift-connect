@@ -7,7 +7,7 @@ export default function BusinessPage() {
     <div  
       className="relative min-h-screen bg-cover bg-fixed bg-center"
       style={{
-        backgroundImage: 'url("/networkHero.png")',
+        backgroundImage: 'url("/network/networkHero.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

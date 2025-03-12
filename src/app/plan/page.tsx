@@ -213,7 +213,7 @@ function Roaming (){
           <div className="md:w-2/5 flex justify-center">
             <div className="relative w-64 h-80">
               <Image
-                src="/roaming.png"
+                src="/plan/roaming.png"
                 alt="Passport to connectivity"
                 width={600}
                 height={800}

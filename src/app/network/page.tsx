@@ -17,7 +17,7 @@ const NetworkHeroComponent = () => {
   return (
     <div className="w-full md:h-[600px] overflow-hidden"
     style={{
-      backgroundImage: "url('/networkHero.png')",
+      backgroundImage: "url('/network/networkHero.png')",
       backgroundSize: "cover",
       backgroundPosition: "top",
 
@@ -25,7 +25,7 @@ const NetworkHeroComponent = () => {
     >
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-12">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl pt-16">
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-red-600">What&apos;s better</span>
@@ -34,7 +34,7 @@ const NetworkHeroComponent = () => {
           </h1>
           
           {/* Subheadline */}
-          <p className="text-white text-lg mb-6">
+          <p className="text-white text-lg font-bold mb-6">
             We&apos;re a Super Carrier. Switch between all three of our networks
             anytime, anywhere, to get the best coverage possible.
           </p>
@@ -45,11 +45,11 @@ const NetworkHeroComponent = () => {
           </p>
           
           {/* Action Buttons */}
-          <div className="mt-8 flex space-x-4">
-            <button className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+          <div className="md:mt-8 my-8 flex space-x-4">
+            <button className="bg-red-600 text-white md:px-6 md:py-3 p-3 rounded-lg hover:bg-red-700 transition-colors">
               Check Your Coverage
             </button>
-            <button className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors">
+            <button className="border border-white text-white md:px-6 md:py-3 p-3 rounded-lg hover:bg-white/20 transition-colors">
               Compare Networks
             </button>
           </div>
@@ -72,7 +72,7 @@ const SuperCarrierDetails = () => {
   return (
     <div 
     style={{
-      backgroundImage: "url('/networkDetails.png')",
+      backgroundImage: "url('/network/networkDetails.png')",
       backgroundSize: "cover",
       backgroundPosition: "top",
     }}
@@ -87,7 +87,7 @@ const SuperCarrierDetails = () => {
                 className={`px-4 py-2 rounded-full text-sm w-[150px] ${
                   activeNetwork === network 
                     ? 'bg-red-600 text-white' 
-                    : 'bg-white/20 text-white/70 hover:bg-white/30'
+                    : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
                 onClick={() => setActiveNetwork(network)}
               >
@@ -128,11 +128,12 @@ const SuperCarrierDetails = () => {
       </div>
     </div>
   );
+
 };
 
 const IFrame = () => {
   return (
-    <div className="w-full h-[600px] flex items-center justify-center overflow-hidden">
+    <div className="w-full md:h-[600px] h-[500px] flex items-center justify-center overflow-hidden">
       <iframe
         src="https://www.youtube.com/embed/your-video-id"
         className="w-[80%] h-[450px] rounded-2xl border-4 border-red-600"
@@ -141,6 +142,7 @@ const IFrame = () => {
       ></iframe>
     </div>
   );
+
 };
 
 const NetworkComparison = () => {
@@ -170,11 +172,11 @@ const NetworkComparison = () => {
           {networks.map((network) => (
             <div 
               key={network.name} 
-              className="bg-[#ffdede] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#ffdede] rounded-lg md:p-6 p-2 text-center shadow-md hover:shadow-lg transition-shadow"
             >
               <div className="mb-4 w-24 h-24 mx-auto">
               <Image
-          src="/networkCards.png"
+          src="/network/networkCards.png"
           alt="Warp Flag"
           width={100}
           height={100}

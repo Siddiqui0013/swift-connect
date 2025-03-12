@@ -17,7 +17,6 @@ export default function Navbar() {
     { name: "BUSINESS", href: "/business" },
     { name: "HOME PHONE", href: "/home-phone" },
     { name: "SHOP", href: "/shop" },
-    { name: "VIDEOS", href: "/videos" },
   ]
 
   const pathname = usePathname()
