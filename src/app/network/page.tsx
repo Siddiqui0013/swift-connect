@@ -72,7 +72,7 @@ const SuperCarrierDetails = () => {
   return (
     <div 
     style={{
-      backgroundImage: "url('/network/networkDetails.png')",
+      backgroundImage: "url('/networkDetails.png')",
       backgroundSize: "cover",
       backgroundPosition: "top",
     }}
