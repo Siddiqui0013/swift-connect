@@ -17,7 +17,7 @@ const NetworkHeroComponent = () => {
   return (
     <div className="w-full md:h-[600px] overflow-hidden"
     style={{
-      backgroundImage: "url('/network/networkHero.png')",
+      backgroundImage: "url('/networkHero.png')",
       backgroundSize: "cover",
       backgroundPosition: "top",
 
@@ -176,7 +176,7 @@ const NetworkComparison = () => {
             >
               <div className="mb-4 w-24 h-24 mx-auto">
               <Image
-          src="/network/networkCards.png"
+          src="/networkCards.png"
           alt="Warp Flag"
           width={100}
           height={100}

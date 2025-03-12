@@ -15,7 +15,7 @@ const Hero = ()=>{
      return (
       <section 
       style={{
-        backgroundImage: "url('/home/hero-bg.png')", 
+        backgroundImage: "url('/hero-bg.png')", 
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -37,7 +37,7 @@ const Hero = ()=>{
             </div>
 
                             <Image
-              src="/home-phone/hero.png"
+              src="/home-phoneHero.png"
               alt="SwiftConnect Hero"
               width={600}
               height={400}

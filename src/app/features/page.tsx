@@ -155,7 +155,7 @@ const SMSTopup = () =>{
   return(
     <div className="flex md:flex-row items-center flex-col gap-6 mx-auto py-12 px-6">
              <Image
-              src="/features/SMSTopup.png"
+              src="/SMSTopup.png"
               alt="SwiftConnect Hero"
               width={400}
               height={400}
@@ -180,7 +180,7 @@ const ReferFriend = () =>{
   return(
     <div className="flex md:flex-row items-center w-[90%] flex-col gap-6 mx-auto py-12 px-6">
              <Image
-              src="/features/referFriends.png"
+              src="/referFriends.png"
               alt="SwiftConnect Hero"
               width={400}
               height={400}
