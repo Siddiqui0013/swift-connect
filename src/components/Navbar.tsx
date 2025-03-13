@@ -53,9 +53,9 @@ export default function Navbar() {
           </nav>
 
           <div className="flex-shrink-0">
-            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#6b3032] font-bold text-sm shadow-md">
+            <Link href="/login" className="px-8 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#6b3032] font-bold text-sm shadow-md">
               TRY FOR FREE
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`block px-6 py-2 rounded-full ${
+                  className={`block px-6 py-2 mb-4 rounded-full ${
                     pathname === link.href
                       ? "bg-[#1E1E1E] text-white"
                       : "bg-[#ea464b] text-white"
@@ -95,9 +95,9 @@ export default function Navbar() {
                 </Link>
               ))
             }
-            <button className="w-full px-8 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#6b3032] font-bold text-sm shadow-md">
+            <Link href="/login" className="flex items-center justify-center w-fit mx-auto px-8 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#6b3032] font-bold text-sm shadow-md">
               TRY FOR FREE
-            </button>
+            </Link>
           </div>
         )}
       </div>
